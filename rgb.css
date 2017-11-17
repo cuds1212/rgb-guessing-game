@@ -1,0 +1,186 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Lato;
+	margin: 0;
+}
+
+#title {
+	background: rgb(50,100,200);
+	color: white;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#titleRGB {
+	font-size:1.75em;
+}
+
+.nav {
+	align-items: center;
+	background: white;
+	color: rgb(50,100,200);
+	display: flex;
+	flex-direction: column;
+	font-size:1em;
+	font-weight: 800;
+	flex-wrap: nowrap;
+	padding: 5px 0;
+}
+
+#message {
+	order: 2;
+	padding: 5px;
+	text-align: center;
+}
+
+#message, #difficulty, #restart {
+	flex-grow: 1;
+}
+
+#difficulty, #restart {
+	flex-basis: 35%;
+}
+
+#restart {
+	text-align: left;
+}
+
+#difficulty {
+	text-align: right;
+}
+
+.button {
+	display: inline-block;
+	cursor: pointer;
+	height: 100%;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+.selected {
+	background: rgb(50,100,200);
+	color: white;
+}
+
+.game-container {
+	align-content: flex-end;
+	align-items: flex-start;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.square {
+	border-radius: 7px;
+	margin:0.5vw;
+	opacity: 1;
+	padding-bottom: 32vw;
+	transition: opacity 0.3s linear;
+	width: 32vw;
+}
+
+.square:hover {
+	cursor: pointer;
+}
+
+.vanish {
+	opacity: 0;
+}
+
+.row3 {
+	display: none;
+}
+
+h1, h3 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (min-width: 600px){
+	#title {
+		font-size: 1.2em;
+		padding: 15px 0;
+	}
+
+	#title h3 {
+		display: inline;
+	}
+
+	#title h1 {
+		display: inline;
+		font-size: 1.5em;
+	}
+
+	#message {
+		flex-basis: 30%;
+		order: 0;
+	}
+
+	#titleRGB {
+		font-size:1.5em;
+	}
+
+	.game-container {
+		width: 80%;
+	}
+
+	.nav {
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.square {
+		padding-bottom: 25vw;
+		width: 25vw;
+	}
+}
+
+@media (min-width: 800px){
+	.game-container {
+		width: 60%;
+	}
+
+	.nav {
+		width: 60%;
+	}
+	.square {
+		padding-bottom: 19vw;
+		width: 19vw;
+	}
+}
+
+
+@media (min-width: 1000px){
+	.game-container {
+		width: 50%;
+	}
+	.nav {
+		width: 50%;
+	}
+	.square {
+		padding-bottom: 15vw;
+		width: 15vw;
+	}
+}
+
+
+

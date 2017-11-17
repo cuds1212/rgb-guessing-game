@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<title>RGB Guesser Game</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300, 800" rel="stylesheet">
+	<!-- Local Stylesheet -->
+	<link rel="stylesheet" href="rgb.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<div id="title">
+		<h3>The Great</h3>
+		<h1 id="titleRGB">RGB(60, 132, 203)</h1>
+		<h3>Guessing Game</h3>
+	</div>
+
+	<!-- Menu bar -->
+	<div class="nav">
+			<span id="restart" class="button">New Colors</span>
+			<span id="message">&nbsp;</span>
+			<div id="difficulty">
+				<span id="easy" class="button">Easy</span>
+				<span id="medium" class="button selected">Medium</span>
+				<span id="hard" class="button">Hard</span>
+			</div>
+	</div>
+
+	<!-- Main content -->
+	<div class="main">
+		<div class="game-container">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square row2"></div>
+			<div class="square row2"></div>
+			<div class="square row2"></div>	
+			<div class="square row3"></div>
+			<div class="square row3"></div>
+			<div class="square row3"></div>	
+		</div>		
+	</div>
+
+<!-- Local JS Script -->
+<script src="rgb.js"></script>
+</body>
+</html>

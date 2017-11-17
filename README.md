@@ -1,2 +1,2 @@
 # rgb-guessing-game
-An html/css/javascript game matching RGB values with the correct color.
+An html/css/javascript game matching RGB values with their correct color. It is modeled off a project from <a href="https://www.udemy.com/the-web-developer-bootcamp/">The Web Developer Bootcamp</a> course on Udemy. As a learning experience I added a third difficulty setting and made the game mobile friendly.
